@@ -32,7 +32,6 @@ function generarFechasDisponibles() {
     return fechasDisponibles;
 }
 
-// Datos de disponibilidad
 var MedicosData = {
     "Medico A": {
         "especialidad": "Cardiologia",
@@ -69,14 +68,11 @@ medicoSelect.addEventListener("change", actualizarHoras);
 fechaInput.addEventListener("change", actualizarHoras);
 especialidadSelect.addEventListener("change", actualizarMedicos);
 
-// Llenar inicialmente la lista de especialidades
 llenarEspecialidades();
 
 function llenarEspecialidades() {
-    // Obtener todas las especialidades únicas de los médicos
     var especialidadesUnicas = [...new Set(Object.values(MedicosData).map(medico => medico.especialidad))];
 
-    // Agregar las especialidades a la lista de selección
     for (var i = 0; i < especialidadesUnicas.length; i++) {
         var option = document.createElement("option");
         option.value = especialidadesUnicas[i];
@@ -89,14 +85,12 @@ function actualizarMedicos() {
     var especialidadSeleccionada = especialidadSelect.value;
     var medicosDisponibles = [];
 
-    // Filtrar los médicos por especialidad
     for (var medico in MedicosData) {
         if (MedicosData[medico].especialidad === especialidadSeleccionada) {
             medicosDisponibles.push(medico);
         }
     }
 
-    // Limpiar y llenar la lista de médicos disponibles
     medicoSelect.innerHTML = "";
     for (var i = 0; i < medicosDisponibles.length; i++) {
         var medico = medicosDisponibles[i];
@@ -106,7 +100,6 @@ function actualizarMedicos() {
         medicoSelect.appendChild(option);
     }
 
-    // Actualizar las horas disponibles y la especialidad al cambiar la especialidad
     actualizarHoras();
 }
 

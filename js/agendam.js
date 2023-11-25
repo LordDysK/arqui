@@ -1,6 +1,4 @@
-// Mostrar y ocultar los formularios
 function showForm(formId) {
-    // En caso de emergencia, se pueden esconder todos
     document.querySelectorAll('form').forEach(form => {
         form.style.display = 'none';
     });
@@ -11,7 +9,7 @@ function showForm(formId) {
 function getCurrentDate() {
     const now = new Date();
     const day = now.getDate().toString().padStart(2, '0');
-    const month = (now.getMonth() + 1).toString().padStart(2, '0'); // Estuve 3 horas contando hasta darme cuenta que empezaba del 0
+    const month = (now.getMonth() + 1).toString().padStart(2, '0'); 
     const year = now.getFullYear();
     return `${day}/${month}/${year}`;
 }
@@ -28,7 +26,6 @@ function agendarCita() {
         const mensaje = `Agenda realizada\nFecha: ${fecha}\nHoras: ${horasSeleccionadas.join(', ')}`;
         alert(mensaje);
 
-        // En vez de limpiar los campos, se recarga la pagina para que se limpie automaticamente
         window.location.reload();
     }
 }
@@ -64,7 +61,6 @@ function agendarCitaB() {
 }
 
 
-// Aca va a el reloj, use lo que aprendi en java para hacer el truco de comerle la ram para actualizar cada segundo el reloj
 function updateCurrentDateTime() {
     const currentDateTimeElement = document.getElementById('current-date-time');
     const now = new Date();
@@ -82,7 +78,7 @@ fechaC.value = fechaActual;
 function getCurrentDate() {
     const now = new Date();
     const day = now.getDate().toString().padStart(2, '0');
-    const month = (now.getMonth() + 1).toString().padStart(2, '0'); // PROBLEMA DE FORMATO, DEBI Haberme fijado que uso diferentes formatos en cada uno
+    const month = (now.getMonth() + 1).toString().padStart(2, '0'); 
     const year = now.getFullYear();
     return `${year}-${month}-${day}`;
 }
@@ -105,10 +101,10 @@ function calcularFechaTresMeses() {
     fechaTresMeses.value = formatDate(nuevaFecha);
 }
 
-let agendado = false; // 15 MINUTOS INTENTANDO QUE NO REQUIRIERA 2 CLICKS LA ALERTA, me di cuenta que podia solo usar interruptor bruh
+let agendado = false; 
 
 function agendarCitaC() {
-    if (agendado) return; // se me olvido agregar la condicional y cuando se ejecuto funciono, sin problema, no se porque, NO MOVER
+    if (agendado) return; 
 
     const fechaC = document.getElementById('fechaC').value;
     const fechaTresMeses = document.getElementById('fechaTresMeses').value;
@@ -122,7 +118,7 @@ function agendarCitaC() {
         window.location.reload();
     }
 
-    agendado = true; // Interruptor profesional activado
+    agendado = true; 
 }
 
 function mostrarOverlay() {
@@ -150,15 +146,12 @@ window.onload = () => {
     
     const botonAgendar = document.querySelector('#form-C button');
     
-    // Esto evita el loop, no pense que funcionaria a la primera
     botonAgendar.removeEventListener('click', agendarCitaC);
     
-    //  y se agrega nuevamente para que no haya duplicados del evento
     botonAgendar.addEventListener('click', agendarCitaC);
 };
 
 
 setInterval(updateCurrentDateTime, 1000);
 
-// Aca va el formulario por defecto, 
 showForm('A');
