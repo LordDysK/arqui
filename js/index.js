@@ -5,13 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
-        if (email === "paciente@gmail.com" && password === "paciente") {
+        if (email === "pabloescobar@gmail.co" && password === "parce") {
             window.location.href = "toma_horas.html";
-        } else if (email === "doctor@galenos.cl" && password === "doctor") {
+        } else if (email === "Gregori.house@galenos.cl" && password === "pechos") {
             window.location.href = "espera.html";
-        } else if (email === "secretaria@galenos.cl" && password === "secretaria") {
+        } else if (email === "betty@galenos.cl" && password === "1234") {
             window.location.href = "agendam.html";
-        } else if (email === "tesoreria@galenos.cl" && password === "tesoreria") {
+        } else if (email === "milei@galenos.cl" && password === "tienemiedo") {
             window.location.href = "tesoreria.html";
         } else {
             alert("Contraseña incorrecta o dirección de correo no válida");
