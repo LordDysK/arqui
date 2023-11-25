@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de espera</title>
+    <link rel="stylesheet" href=css/espera.css>
+</head>
+<body>
+    <header><h1>Lista de pacientes</h1>
+    <a href="index.html" id="cerrarSesion">Cerrar Sesión</a>
+    </header>
+    <br>
+    <p ><h1 align = "center">En espera</h1></p>
+    
+    <table border="1">
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>RUT</th>
+            <th>Hora llegada</th>
+            <th><img src="img/check.png" width="80px"></a></th>
+        </thead>
+        <tbody id="tablaEnEspera"></tbody>
+    </table>
+    <ul id="listaPaciente"></ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p><h1 align = "center">Atendidos</h1></p>
+    <table border="1">
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>RUT</th>
+            <th>Hora llegada</th>
+        </thead>
+        <tbody id="tablaAtendidos"></tbody>
+    </table>
+    <script src=js/espera.js></script> 
+</body>
+</html>

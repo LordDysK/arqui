@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Reservas</title>
+    <link rel="stylesheet" href="css/pacientes.css">
+
+</head>
+<body>
+    <nav>
+        <a href="toma_horas.html">Solicitar Cita</a> | 
+        <a href="gestion_reservas.html">Mis Reservas</a> |
+        <a href="index.html">Cerrar Sesion</a>  
+    </nav>
+    <main align="center">
+        <h1>Tabla de Citas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Médico</th>
+                    <th>Detalles</th>
+                    <th>Anular Cita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/09/2023</td>
+                    <td>Dr. Juan Pérez</td>
+                    <td><button class="btn" onclick="verDetalles(1)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+                <tr>
+                    <td>02/09/2023</td>
+                    <td>Dr. John Smith</td>
+                    <td><button class="btn" onclick="verDetalles(2)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+                <tr>
+                    <td>01/09/2023</td>
+                    <td>Dr. Otto Neumann</td>
+                    <td><button class="btn" onclick="verDetalles(3)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+                <tr>
+                    <td>02/09/2023</td>
+                    <td>Dra. María Rodríguez</td>
+                    <td><button class="btn" onclick="verDetalles(4)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+                <tr>
+                    <td>01/09/2023</td>
+                    <td>Dr. William Shakespeare</td>
+                    <td><button class="btn" onclick="verDetalles(5)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+                <tr>
+                    <td>02/09/2023</td>
+                    <td>Dra. Jeanne D'arc</td>
+                    <td><button class="btn" onclick="verDetalles(6)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+                <tr>
+                    <td>01/09/2023</td>
+                    <td>Dr. Bruce Banner</td>
+                    <td><button class="btn" onclick="verDetalles(7)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+                <tr>
+                    <td>02/09/2023</td>
+                    <td>Dra. Maria Curie</td>
+                    <td><button class="btn" onclick="verDetalles(8)">Detalles</button></td>
+                    <td><button class="btn" onclick="anularCita(this)">Anular Cita</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <img src="img/galenos2.png" alt="Logo de Consultorio Galenos" class="logo">
+    <script src="js/gestion_reservas.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema del Centro Médico</title>
+    <link rel="stylesheet" href="css/recaudacion.css">
+</head>
+<body>
+    <header>
+        <h1>Informe De Recaudación</h1>
+        <a href="index.html" id="cerrarSesion">Cerrar Sesión</a>
+    </header>
+
+    <main>
+        <div class="contenedorGeneraInforme">
+            <section class="genera-informe">
+
+                
+            
+                <h2 class="subtitulo">Crear Informe de Recaudación</h2>
+                
+                <div class="totalRecaudacion">
+                    <label class="ingrese-fecha">Recaudación Total </label>
+                    <input type="number" name="totalDeRecaudacion" id="totalRecaudacion" min="10000" required><br><br>
+                </div>
+
+                <div class="fechas">
+                    <label for="f-recaudacion" class="ingrese-fecha">Ingrese fecha de inicio </label>
+                    <input type="date" name="f-recaudacion" id="fecha-inicio" required><br><br>
+                    <label for="f-recaudacion" class="ingrese-fecha">Ingrese fecha de fin </label>
+                    <input type="date" name="f-recaudacion" id="fecha-fin" required>
+                </div>
+    
+                
+    
+                <div class="forma-pago">
+                    <label for="Forma-Pago" class="pago">Metodo de pago</label>
+                    <select name="Forma-Pago" id="Mpago" required>
+                        <option value="Debito">Débito</option>
+                        <option value="Credito">Crédito</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Transferencia">Transferencia</option>
+                    </select>
+                </div>
+    
+                    <div class="btn-crear">
+                        <button class="btn" id="botonInforme" type="submit">Crear informe</button>
+                </div>
+
+                <div id="mensajeVentana"  class="mensaje">
+                    <h2 class="tituloVentanaInforme">Informe de recudacion N°1 </h2><br>
+                    <h4 class="bajoTitulo">El informe de recudación ha sido creado exitosamente esta es la información que se obtuvo: </h4> <br>
+                    <div class="contenidoInforme">
+                        <label >Recaudacion: <b>$</b><span id="recaudacionCont"></span> </label><br>
+                        <label >Fecha inicio: <span id="fecha-inicio-cont"></span></label><br>
+                        <label >Fecha fin: <span id="fecha-fin-cont"></span></label><br>
+                        <label >Metodo de pago: <span id="metodoPago"></span> </label><br>
+                    </div>
+                    <button id="cerrarVentana">Cerrar</button>
+                    
+                </div>
+                <div id="mensajeError" style="display: none;" class="mensajeError">Por favor, complete todos los campos</div>
+    
+            </section>
+        </div>
+        
+        <div class="contenedor-comprobante">
+            <section class="genera-comprobante">
+                <h2 class="subtitulo">Comprobante de Recaudación</h2>
+                <div class="emisor">
+                    <label for="nombre-emisor" class="nombre">Nombre del Médico </label>
+                    <input type="text" name="emisor" id="nombreMedico" class="nombre-emisor" required> <br><br>
+
+                    <label for="nombre-emisor" class="nombre">Correo electrico </label>
+                    <input type="email" name="emisor" id="correoMedico" class="correo" required>
+                </div>
+                <div class="comentarios">
+                    <label class="comentario-medico">Comentarios del Médico <br></label>
+                    
+                    <textarea id="comentariosID" autocomplete="new-password" rows="30" cols="10" tabindex="4"></textarea>
+                </div>
+    
+                <div class="btn-comprobante">
+                    <button class="btn" id="botonComprobante" type="submit">Generar comprobante</button>
+                </div>
+                
+                <div id="mensajeComprobante"  class="mensaje">
+                    <h2 class="tituloVentanaInforme">Comprobante de Informe </h2><br>
+                    <h4 class="bajoTitulo"> DATOS DEL INFORME </h4> <br>
+                    <div class="contenidoInforme">
+                        <label >Recaudacion: <b>$</b><span id="recaudacionCont2"></span> </label><br>
+                        <label >Fecha inicio: <span id="fecha-inicio-cont2"></span></label><br>
+                        <label >Fecha fin: <span id="fecha-fin-cont2"></span></label><br>
+                        <label >Metodo de pago: <span id="metodoPago2"></span> </label><br><br>
+                    </div>
+                    <div class="contenidoComprobante" style="max-width: 300px; max-height: 200px; overflow: auto;">
+                        <label >Nombre medico: <span id="medicoNombre"></span> </label><br>
+                        <label >Correo electrico: <span id="email"></span></label><br>
+                        <label >Comentarios: <span id="comentarios"></span></label><br>
+                    </div>
+                    
+                    
+                    <p >Presione "enviar" para mandar el comprobante a su correo. </p>
+                    <button id="cerrarComprobante">Cerrar</button>
+                    <button id="enviarComprobante">Enviar</button>
+
+                    
+                    
+
+                </div>
+                <div id="envComprobante" style="display: none;" class="envComprobante"> El comprobante ha sido enviado correctamente</div>
+                <div id="emailError" style="display: none;" class="mensajeError"> El correo electronico es érroneo</div>
+                <div id="fechasError" style="display: none;" class="mensajeError"> Las fechas ingresadas no son válidas</div>
+            </section>
+        </div>
+        <footer>
+            <h5>PAGINA WEB version 1.0</h5> 
+            <a class="linkInsta" href="https://www.instagram.com/leomessi" target="_blank">Contactanos en nuestro instagram para cualquier problema con la página</a>
+        </footer>
+        
+        
+    </main>
+    <script src="js/recaudacion.js"></script>
+</body>
+</html>

@@ -1,0 +1,409 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-image: linear-gradient(to top, rgba(95, 89, 108, 0.5) 0%, rgba(235, 223, 229, 0.5) 100%), url("../img/doctol.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+header {
+    /*background-color: rgb(57, 138, 220);*/
+    font-family:'Times New Roman', Times, serif ;
+    color: #0e0e0f;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.contenedorGeneraInforme {
+    padding: 20px;
+    margin: 0px 50px 10px 100px ;
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.contenedor-comprobante {
+    padding: 20px;
+    margin: 0px 50px 15px 100px ;
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.subtitulo{
+    padding: 20px 0px 0px 0px;
+    margin: 0;
+    color: rgb(117, 116, 119);
+    font-size: 25px;
+}
+
+.ingrese-fecha{
+    padding: 0px;
+    margin: 0px;
+}
+
+.fechas{
+    font-family:'Times New Roman', Times, serif ;
+    padding: 0px 0px 0px 200px;
+    font-size: 16px;
+    color: rgb(0, 0, 0.5);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
+}
+
+#fecha-inicio{
+    font-weight: bold;
+    margin: 0px 0px 0px 20px;
+    color: rgb(10, 80, 230);
+    background-color: rgba(197, 196, 203, 0.977);
+}
+
+#fecha-fin{
+    font-weight: bold;
+    margin: 0px 0px 0px 40px;
+    color: rgb(10, 80, 230);
+    background-color: rgba(197, 196, 203, 0.977);
+    cursor: pointer;
+}
+
+.forma-pago{
+    font-family:'Times New Roman', Times, serif ;
+    padding: 15px 0px 20px 200px;
+    font-size:16px ;
+    
+}
+
+#Mpago{
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif ;
+    text-align: center;
+    margin: 0px 0px 0px 63px;
+    color: rgb(10, 80, 230);
+    background-color: rgba(197, 196, 203, 0.977);
+    cursor: pointer;
+}
+
+#totalRecaudacion{
+    font-weight: bold;
+    margin: 10px 0px 0px 46px;
+    color: rgb(10, 80, 230);
+    background-color: rgba(197, 196, 203, 0.977);
+}
+
+.totalRecaudacion{
+    font-family:'Times New Roman', Times, serif ;
+    padding: 10px 0px 0px 200px;
+    font-size:16px ;
+}
+
+.btn-crear{
+    padding: 15px 0px 20px 600px;
+    
+    
+}
+.btn{
+    background-color: rgba(197, 196, 203, 0.977);
+    cursor: pointer;
+}
+
+.emisor{
+    font-family:'Times New Roman', Times, serif ;
+    padding: 50px 0px 0px 200px;
+    font-size: 16px;
+    color: rgb(0, 0, 0.5);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.nombre-emisor{
+    background-color:  rgba(197, 196, 203, 0.977);
+}
+.correo{
+    background-color:  rgba(197, 196, 203, 0.977);
+    margin-left: 25px;
+}
+
+.comentarios{
+    font-family:'Times New Roman', Times, serif ;
+    padding-top: 20px;
+    /*padding: 50px 0px 0px 200px;*/
+    font-size: 16px;
+    color: rgb(0, 0, 0.5);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
+}
+
+.comentario-medico{
+    padding: 50px 0px 0px 200px;
+    
+}
+
+.btn-comprobante{
+    
+    padding: 15px 0px 20px 570px;
+    
+}
+
+textarea{
+    resize: vertical;
+    min-height: 100px;
+    max-height: 0px;
+    width: 450px;
+    margin-left: 200px;
+    background-color:  rgba(197, 196, 203, 0.977);
+}
+
+footer{
+    color: blue;
+    text-align: center;
+}
+
+
+#mensajeVentana{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: #ffffff;
+    border: rebeccapurple;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+#mensajeComprobante{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: #ffffff;
+    border: rebeccapurple;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+
+.mensaje {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(224, 190, 236);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(25, 93, 182, 0.2);
+    z-index: 1;
+}
+
+#mensaje2{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: rgb(149, 149, 246);
+    text-align: center;
+}
+
+
+.mensajeError {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(25, 93, 182, 0.2);
+    z-index: 1;
+}
+
+#mensajeError{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: rgb(246, 85, 85);
+    text-align: center;
+}
+
+#fechasError{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: rgb(246, 85, 85);
+    text-align: center;
+}
+
+#emailError{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: rgb(246, 85, 85);
+    text-align: center;
+}
+
+.contenidoInforme {
+    padding: 20px 20px 20px 20px;
+    margin: 0px 50px 20px 50px ;
+    background-color: #dfdedf;
+
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contenidoComprobante {
+    padding: 30px;
+    margin: 0px 0px 30px 15px ;
+    background-color: #dfdedf;
+
+    border: 1px solid black;
+    border-radius: 8px;
+    /*text-align: center;*/
+}
+
+#recaudacionCont{
+    font-weight: bold;
+}
+
+#fecha-inicio-cont{
+    font-weight: bold;
+}
+
+#fecha-fin-cont{
+    font-weight: bold;
+}
+
+#metodoPago{
+    font-weight: bold;
+}
+
+#cerrarVentana{
+    margin: 0px 0px 0px 280px;
+    cursor: pointer;
+}
+
+#cerrarComprobante{
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+}
+
+#enviarComprobante{
+    margin: 0px 0px 0px 280px;
+    cursor: pointer;
+}
+
+.tituloVentanaInforme{
+    text-align: center;
+    color: #01999A
+}
+
+.bajoTitulo{
+    text-align: center;
+}
+
+.envComprobante {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(25, 93, 182, 0.2);
+    z-index: 1;
+}
+
+#envComprobante{
+    font-family:'Times New Roman', Times, serif ;
+    background-color: rgb(31, 234, 122);
+    text-align: center;
+}
+
+.linkInsta{
+    font-family:'Times New Roman', Times, serif ;
+    color: rgb(67, 67, 210);
+}
+
+
+@media (min-width: 400px) and (max-width: 600px) and (orientation:landscape){
+
+
+    .contenedorGeneraInforme,
+    .contenedor-comprobante {
+        margin: 5px;
+        padding: 0;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+        color: #0e0e0f;
+        text-align: center;
+    }
+
+    .fechas{
+        margin: 0;
+        padding: 0px 10px 0px 10px;
+        text-align: left;
+    }
+
+    .totalRecaudacion{
+        margin: 0;
+        padding: 30px 10px 0px 10px;
+        text-align: left;
+    }
+
+    .forma-pago{
+        margin: 0;
+        padding: 20px 10px 0px 10px;
+        text-align: left;
+    }
+
+    .btn-crear{
+        margin: 0;
+        padding: 20px 10px 20px 400px;
+        text-align: center;
+    }
+    
+
+
+
+
+
+    .subtitulo {
+        font-size: 20px;
+        color: #0e0e0f;
+        text-align: center;
+    }
+
+    .emisor{
+        margin: 0;
+        padding: 30px 10px 0px 10px;
+        text-align: left;
+    }
+
+    .comentarios{
+        margin: 0;
+        padding: 10px 0px 10px 10px;
+        text-align: left;
+    }
+
+    .comentario-medico{
+        margin: 0;
+        padding: 10px 0px 0px 0px;
+        text-align: left;
+    }
+
+    #comentariosID{
+        margin: 0;
+        padding: 10px 0px 0px 10px;
+        text-align: left;
+    }
+
+    .btn-comprobante{
+        margin: 0;
+        padding: 20px 10px 20px 400px;
+        text-align: center;
+    }
+
+
+    .btn-crear{
+        margin: 0;
+        padding: 20px 10px 20px 400px;
+        text-align: center;
+    }
+
+
+}

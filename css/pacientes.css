@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    background-color: #D6EFEB;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #1D617A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: #65C5B9;
+    text-align: center;
+    padding: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.logo {
+    width: 25px; 
+    height: auto; 
+    position: absolute; 
+    top: 13px; 
+    left: 15px; 
+}
+
+/* Estilos específicos para botones */
+.btn {
+    background-color: #00A18B;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1D617A;
+}
+
+/* Estilos para el footer */
+.footer {
+    background-color: #1D617A;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Clases para cambiar colores de fondo específicos */
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+/* Clase para caja de formulario */
+.formulario-caja {
+    background-color: #65C5B9;
+    padding: 20px;
+    border: 1px solid #D6EFEB;
+    border-radius: 5px;
+}
+
+/* Estilos para el formulario */
+#citaForm {
+    background-color: #D6EFEB;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para los elementos del formulario */
+#citaForm label {
+    color: #1D617A;
+}
+
+/* Estilos para los botones del formulario */
+#citaForm button {
+    background-color: #65C5B9;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para el botón cuando se le pasa el mouse por encima */
+#citaForm button:hover {
+    background-color: #00A18B;
+}
+
+/* Estilos para botones de acción en la tabla de citas */
+.btn-action {
+    background-color: #1D617A;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.btn-action:hover {
+    background-color: #00A18B;
+}
+
+table {
+    margin: 10px;
+    border-collapse: separate;
+    border-spacing: 20px;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #1D617A;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces dentro del menú */
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para los enlaces cuando se les pasa el mouse por encima */
+nav a:hover {
+    background-color: #00A18B;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .header .logo {
+        top: 7px;
+        left: 7px;
+    }
+
+    .nav {
+        padding: 5px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .btn-action {
+        padding: 3px 6px;
+        font-size: 12px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    nav a {
+        padding: 3px 6px;
+        font-size: 14px;
+    }
+}

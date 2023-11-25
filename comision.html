@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de comprobantes.</title>
+    <link rel="stylesheet" href="css/comision.css">
+</head>
+<body>
+    <header><h1>Generador de comprobantes</h1>
+        <a href="index.html" id="cerrarSesion">Cerrar Sesión</a>
+    </header>
+    <div class="seccion">
+        <label for="especialidad">Selecciona una especialidad: </label>
+        <select id="especialidad">
+            <option value="esp">Selecciona una especialidad</option>
+            <option value="cardiologia">Cardiología</option>
+            <option value="urologia">Urología</option>
+            <option value="controlNiño">Control niño sano</option>
+            <option value="cuidados">Cuidados paliativos</option>
+            <option value="general">Medicina general</option>
+            <option value="neurologia">Neurología adulto</option>
+            <option value="nutri">Nutrición adulto</option>
+            <option value="pediatria">Pediatría</option>
+            <option value="psico">Psicología adulto</option>
+            <option value="psiquiatria">Psiquiatría</option>
+        </select>
+        <br>
+        <br>
+        <label for="doctores">Busqueda por profesional: </label>
+        <select id="doctores">
+            <option value="drs">Selecciona un nombre</option>
+            <option value="dr0">Jaime Gonzalez</option>
+            <option value="dr1">Juán Perez</option>
+            <option value="dr2">Cristóbal Cárdenas</option>
+            <option value="dr3">Vicente Espinoza</option>
+            <option value="dr4">Laura Covarrubia</option>
+            <option value="dr5">Ximena Leyton</option>
+            <option value="dr6">Ignacio Sánchez</option>
+            <option value="dr7">Miguel Ramirez</option>
+            <option value="dr8">Claudio Carrera</option>
+            <option value="dr9">Ignacia Suazo</option>
+        </select>
+        <p id="resultado">Presiona para generar comprobante para <span id="resultDoctor"></span>, de la especialidad <span id="resultEspecialidad"></span></p>
+        <button id="generarComprobante">Generar</button>
+    </div>   
+    <script src="js/comision.js"></script>
+</body>
+</html>

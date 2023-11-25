@@ -1,0 +1,78 @@
+body{
+    margin: 20px;
+}
+
+
+header {
+    background-color: #65c5b9; 
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.seccion {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+
+
+label {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    font-size: 16px;
+    cursor: pointer; 
+}
+
+
+button {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 20px;  
+    border-radius: 4px; 
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+#resultado {
+    font-size: 18px; 
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .seccion {
+        padding: 10px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    select {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #resultado {
+        font-size: 18px;
+    }
+}
+
