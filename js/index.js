@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (email === "Gregori.house@galenos.cl" && password === "pechos") {
             window.location.href = "espera.html";
         } else if (email === "betty@galenos.cl" && password === "1234") {
-            window.location.href = "agendam.html";
+            window.location.href = "Agenda.html";
         } else if (email === "milei@galenos.cl" && password === "tienemiedo") {
             window.location.href = "tesoreria.html";
         } else {
