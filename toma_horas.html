@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Citas Medicas</title>
+    <link rel="stylesheet" href="css/pacientes.css">
+</head>
+<body>
+    <nav>
+        <a href="toma_horas.html">Solicitar Cita</a> | 
+        <a href="gestion_reservas.html">Mis Reservas</a> |
+        <a href="index.html">Cerrar Sesion</a> 
+    </nav>
+    <header align ="center">
+        <h1>Clinica Medica Galenos</h1>
+        <p>Bienvenido a nuestro sistema de citas medicas en linea</p>
+    </header>
+    <br>
+
+    <div class="formulario-caja">
+        <h2>Solicitud de Citas Medicas</h2>
+        <form id="citaForm">
+            <label for="centroMedico">Centro Medico:</label>
+            <select id="centroMedico" name="centroMedico">
+                <option value="centro1">Providencia</option>
+            </select>
+            <br>
+            <br>
+            <label for="especialidad">Especialidad:</label>
+            <select id="especialidad" name="especialidad"></select>
+            <br>
+            <br>
+            <label for="medico">Medico:</label>
+            <select id="medico" name="medico"></select>
+            <img src="img/galenos2.png" alt="Logo de Consultorio Galenos" class="logo">
+            <br>
+            <br>
+            <label for="fecha">Fecha de la Cita:</label>
+            <input type="date" id="fecha" name="fecha">
+            <br>
+            <br>
+            <label for="hora">Hora de la Cita:</label>
+            <select id="hora" name="hora">
+                <!-- Las horas disponibles se cargarán dinámicamente aquí -->
+            </select>
+            <br>
+            <br>
+            <button class="btn" onclick="Tomahora(this)">Anular Cita</button>
+            <div id="alertaPersonalizada" class="alerta" style="display: none;">
+                <div class="alerta-titulo">Titulo: Todo listo!</div>
+                <div class="alerta-cuerpo">Tu hora ha sido agendada correctamente con fecha: <span id="fechaAgendada"></span></div>
+                <div class="alerta-footer">
+                    <button class="btn" onclick="cerrarAlerta()">OK</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/toma_horas.js"></script>
+</body>
+</html>
